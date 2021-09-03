@@ -6,7 +6,7 @@ mysql> select name, age, math, sci, sports from student where name = "dave";
 
 -- Management wants to know the name and roll no of students who have qualified for scholarship.
 -- Qualification parameter : math OR sci above 80
-mysql> select name from student where math>80 or sci>80;
+mysql> select name, rollno from student where math>80 or sci>80;
 
 -- A teacher for social wants to know what are the distinct marks she gave her students.
 mysql> select distinct social from student;
