@@ -24,7 +24,8 @@ mysql> select loc from campus where engg = False;
 
 -- What is the ratio of students in the campus that provides stem and does not provide stem (query and show
 -- ratio by calc yourself, no need to divide just num/denom)
-
+mysql> Select sum(cap) from campus where engg=1;
+mysql> Select sum(cap) from campus where engg=0;
 
 -- For all rounder find students who have score above 70 in all subj.
 mysql> select name from student where math>70 and sci>70 and eng>70 and soci
