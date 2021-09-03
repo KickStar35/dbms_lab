@@ -33,3 +33,6 @@ al>70 and sports>70;
 -- Find the count of students in each group if I split the students as per every 20 roll numbers in one group.
 -- Note you can run multiple queries and count individually for this one or see if you can google a faster
 -- way with sql itself. Both will be graded equally just trying to pique your curiosity.
+mysql> select count(name) as Count from student where rollno>=1 and rollno<=20;
+mysql> select count(name) as Count from student where rollno>=21 and rollno<=40;
+mysql> select count(name) as Count from student where rollno>=41 and rollno<=60;
