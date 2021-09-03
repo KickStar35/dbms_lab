@@ -17,7 +17,7 @@ mysql> select count(eng) from student where eng<70;
 
 -- The stem field wants to find the best qualified student to be head of their club as per marks. List the
 -- students name and rollno. (stem is sci and math in this case)
-mysql> select name as "Club Head",max(sci+math) as "Marks" from student;
+mysql> select name, rollno, max(sci+math) as marks from student;
 
 -- The Dept. of stem wants to know the college location of the university that does not provide engineering.
 mysql> select loc from campus where engg = False;
