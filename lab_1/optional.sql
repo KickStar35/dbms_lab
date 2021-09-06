@@ -9,5 +9,4 @@ OR
 mysql> select name from student where name like '_a%';
 
 3.
-
-
+mysql> select name, math from student order by math asc;
