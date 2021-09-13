@@ -17,7 +17,7 @@ mysql> select sum(cap) as west_zone from campus where pincode like '3%' or pinco
 mysql> select name from student where (math+sci+social+eng+sports)/5= (select max(math+sci+social+eng+sports)/5 from student where (math+sci+social+eng+sports)/5 <(select max(math+sci+social+eng+sports)/5 from student));
 
 --Display student’s name, rno, avg marks (“avg_marks”), score status (“score_status”) where scorestatus is “High” if above average and “Low” if below average. (sub queries)
-
+mysql> select name, rollno as rno, (math+sci+eng+social+sports)/5 as avg_marks, if((math+sci+eng+social+sports)/5>= (select avg(math+sci+social+eng+sports)/5 from student), "High", "Low") as score_status from student;
 
 
 
